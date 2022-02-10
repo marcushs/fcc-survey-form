@@ -1,0 +1,121 @@
+body::before{
+  content:'';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(0deg, rgba(250,250,250,0.2497592787114) 0%, rgba(250,250,250,0.7483587184873958462) 100%), url("https://i.imgur.com/zvKvhA5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-container {
+  position: relative;
+}
+/*form*/
+form {
+  position: relative;
+  outline: 2px solid black;
+  width: 70%;
+  margin: auto;
+  border-radius: 5px;
+  text-align: left;
+  padding: 1rem 2rem;
+  background-color: rgb(176, 176, 176, 0.65);
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clue {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7em;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.5em;
+  padding: 0.150rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus{
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  position: relative;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  position: relative;
+  top: 2.5px;
+  margin-right: 0.4rem;
+  min-height: 1.05rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  resize: none;
+  width: 100%;
+  min-height: 100px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  background-color: #395B64;
+  width: 100%;
+  min-height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+#submit:hover{
+  animation-name: submit-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes submit-color{
+  100%{
+    background-color: #4791d0;
+  }
+}

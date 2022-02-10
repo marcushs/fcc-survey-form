@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="C:\Users\Marcus\Desktop\Code\FCC resp web dev projects\survey form\css\style.css">
+  <title>Musical Instrument Survey Form</title>
+</head>
+<body>
+  <div class="top-container">
+    <header>
+      <h1 id="title" class="text-center">Musical Instrument Survey Form</h1>
+      <p id="description" class="text-center"><em>Tell me what musical instrument you play!</em></p>
+    </header>
+  </div>
+  <div>
+    <form action="mailto:marcustotw29@gmail.com" method="get" enctype="text/plain" id="survey-form">
+      <label id="name-label" for="name">Name: <br>
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Enter your name"
+               required
+               class="form-control"
+               />
+       </label> <br>
+
+      <label id="email-label" for="email">Email: <br>
+         <input type="email"
+                id="email"
+                name="email address"
+                placeholder="Ex: jean.dupont@gmail.com"
+                required
+                class="form-control"
+                />
+       </label> <br>
+
+      <label id="number-label" for="number">Age <span class="clue">(optional)</span>: <br>
+         <input type="number"
+                id="number"
+                name="age"
+                min="5"
+                max="99"
+                placeholder="Your age"
+                class="form-control"
+                />
+       </label> <br>
+
+      <p>Do you play any musical instrument? <br></p>
+      <label for="Yes">
+        <input id="Yes"
+               type="radio"
+               name="Instrument now?"
+               value="Yes"
+               class="input-radio"
+               checked
+               />Yes!
+        </label><br>
+
+      <label for="no">
+        <input id="no"
+               type="radio"
+               name="Instrument now?"
+               value="No"
+               class="input-radio"
+               required
+               />Not yet...
+      </label> <br><br>
+
+        <p>If yes, for how many years you have been playing the musical instrument(s)?</p>
+        <select name="Nb years" id="dropdown" class="form-control">
+          <option disabled selected value>Select an option</option>
+          <option value="Noob">Under 1 year</option>
+          <option value="Beginner">1 to 3 years</option>
+          <option value="Intermediate">3 to 5 years</option>
+          <option value="Advanced">5 to 8 years</option>
+          <option value="Master">More than 8 years</option>
+        </select>
+        <br>
+
+      <p>What instrument(s) do you play? <span class="clue">(check all that apply)</span></p>
+      <label for="piano"><input id="piano"
+               type="checkbox"
+               name="instruments"
+               value="piano"
+               class="input-checkbox"
+               />Piano
+      </label><br>
+
+      <label for="violin"><input id="violin"
+               type="checkbox"
+               name="instruments"
+               value="violin"
+               class="input-checkbox"
+               />Violin
+      </label> <br>
+
+      <label for="guitar"><input id="guitar"
+               type="checkbox"
+               name="instruments"
+               value="guitar"
+               class="input-checkbox"
+               />Guitar
+      </label><br>
+
+      <label for="drum"><input id="drum"
+               type="checkbox"
+               name="instruments"
+               value="drum"
+               class="input-checkbox"
+               />Drum
+      </label><br>
+
+      <label for="saxophone"><input id="saxophone"
+               type="checkbox"
+               name="instruments"
+               value="saxophone"
+               class="input-checkbox"
+               />Saxophone
+      </label><br>
+
+      <label for="other"><input id="other"
+               type="checkbox"
+               type="text"
+               name="instruments"
+               value="piano"
+               class="input-checkbox"
+               />other
+      </label>
+
+      <div class="form-group">
+        <p>Anything you would like to add?</p>
+         <textarea class="input-textarea"
+                   name="comment"
+                   id="comment"
+                   placeholder="Comment here"></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+     </form>
+   </div>
+</body>
+</html>
