@@ -4,11 +4,12 @@ body::before{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: -1;
   background-image: linear-gradient(0deg, rgba(250,250,250,0.2497592787114) 0%, rgba(250,250,250,0.7483587184873958462) 100%), url("https://i.imgur.com/zvKvhA5.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 header {
